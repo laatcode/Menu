@@ -68,3 +68,36 @@ a{
   float: right;
   margin-left: 10px;
 }
+
+.menu-container .menu ul {
+  display: none;
+}
+
+.menu-container .menu ul li a {
+  background: #424242;
+  color: #E9E9E9;
+}
+
+.menu-container .menu .active > a {
+  background: #1A95D5;
+  color: #FFF;
+}
+
+@media screen and (max-width: 450px) {
+
+  .menu-container {
+    margin: 0;
+    width: 100%;
+    /* position: fixed; */
+    /* top: 0; */
+    /* z-index: 1000; */
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .menu-container .menu {
+    display: none;
+  }
+}
